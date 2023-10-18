@@ -1,0 +1,60 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  // color: inherit;
+}
+
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  background-color: transparent;
+  border: 0px solid;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+    box-shadow: 0;
+  }
+}
+
+form:hover,
+form:focus,
+form:active {
+  outline: 0;
+  box-shadow: 0;
+  background-color: transparent;
+}

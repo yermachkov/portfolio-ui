@@ -1,0 +1,87 @@
+.works-section {
+  margin-bottom: 83px;
+}
+
+.works-section-title {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  line-height: calc(60 / 18);
+
+  @include tabl {
+    text-align: left;
+    font-size: 22px;
+    line-height: calc(60 / 22);
+  }
+}
+
+.works-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.project-image {
+  overflow: visible;
+  max-width: 339px;
+  max-height: 230px;
+
+  @include tabl {
+    max-width: 246px;
+    max-height: 180px;
+  }
+}
+
+.project-card-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 344px;
+  gap: 18px;
+
+  @include tabl {
+    flex-direction: row;
+  }
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  margin-bottom: 16px;
+
+  @include tabl {
+    font-size: 30px;
+    line-height: calc(44.06 / 30);
+  }
+}
+
+.project-info-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 26px;
+  margin-bottom: 22px;
+}
+
+.project-date {
+  font-size: 16px;
+  font-weight: 900;
+
+  color: #fff;
+  background-color: #142850;
+  border-radius: 16px;
+  padding: 4px 10px;
+
+  @include tabl {
+    font-size: 18px;
+  }
+}
+
+.project-type {
+  font-size: 16px;
+  color: #8695a4;
+
+  @include tabl {
+    font-size: 20px;
+  }
+}

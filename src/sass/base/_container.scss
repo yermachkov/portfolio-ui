@@ -1,0 +1,12 @@
+.container {
+  max-width: 940px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin: 0 auto;
+  text-align: left;
+
+  @include tabl {
+    padding-left: 148px;
+    padding-right: 148px;
+  }
+}
