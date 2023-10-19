@@ -1,7 +1,7 @@
 const portfolio = [
   {
     id: 1,
-    img: '/dashboard.jpg',
+    img: '/../../public/dashboard.jpg',
     title: 'Designing Dashboards',
     date: '2020',
     type: 'Dashboard',
@@ -9,7 +9,7 @@ const portfolio = [
   },
   {
     id: 2,
-    img: '/illustration.jpg',
+    img: '../../public/illustration.jpg',
     title: 'Vibrant Portraits of 2020',
     date: '2018',
     type: 'Illustration',
@@ -17,7 +17,7 @@ const portfolio = [
   },
   {
     id: 3,
-    img: '/typography.jpg',
+    img: '../../public/typography.jpg',
     title: '36 Days of Malayalam type',
     date: '2018',
     type: 'Typography',
