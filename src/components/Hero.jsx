@@ -1,3 +1,5 @@
+import { photo } from '../assets/img';
+
 const Hero = () => {
   return (
     <section className="hero-section container">
@@ -18,7 +20,7 @@ const Hero = () => {
         </a>
       </div>
       <img
-        src="../assets/img/photo.png"
+        src={photo}
         alt="a photo of John"
         width={170}
         className="hero-photo"
