@@ -3,14 +3,16 @@ import FbLogo from '../assets/svg/fb.svg';
 import LinkedinLogo from '../assets/svg/Linkedin.svg';
 import TwitterLogo from '../assets/svg/twitter.svg';
 
+import styles from './Footer.module.scss';
+
 const Footer = () => {
   return (
     <footer
-      className="container footer-section"
+      className={`container ${styles.footer_section}`}
       id="contact"
     >
-      <ul className="socials-list">
-        <li className="socials-item">
+      <ul className={styles.socials_list}>
+        <li className={styles.item}>
           <a href="https://www.facebook.com/">
             <img
               src={FbLogo}
@@ -30,7 +32,7 @@ const Footer = () => {
             />
           </a>
         </li>
-        <li className="socials-item">
+        <li className={styles.socials_list}>
           <a href="https://twitter.com/">
             <img
               src={TwitterLogo}
@@ -40,7 +42,7 @@ const Footer = () => {
             />
           </a>
         </li>
-        <li className="socials-item">
+        <li className={styles.socials_list}>
           <a href="https://www.linkedin.com/">
             <img
               src={LinkedinLogo}
@@ -51,7 +53,9 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <p className="footer-copyright">Copyright &copy; All rights reserved</p>
+      <p className={styles.footer_copyright}>
+        Copyright &copy; All rights reserved
+      </p>
     </footer>
   );
 };

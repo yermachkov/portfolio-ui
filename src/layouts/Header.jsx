@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styles from './Header.module.scss';
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -12,9 +13,9 @@ const Navbar = () => {
   };
 
   return (
-    <header className="container">
-      <nav className="navbar">
-        <ul className={`nav-menu ${isActive ? 'active' : ''}`}>
+    <header className={styles.header_section}>
+      <nav className={styles.navbar}>
+        <ul className={`${styles.nav_menu} ${isActive ? styles.active : ''}`}>
           <li onClick={removeActive}>
             <a href="#works">Works</a>
           </li>
@@ -27,12 +28,12 @@ const Navbar = () => {
         </ul>
 
         <div
-          className={`hamburger ${isActive ? 'active' : ''}`}
+          className={`${styles.hamburger} ${isActive ? styles.active : ''}`}
           onClick={toggleActiveClass}
         >
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
         </div>
       </nav>
     </header>

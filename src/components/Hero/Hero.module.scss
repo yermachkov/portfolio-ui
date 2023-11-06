@@ -1,10 +1,12 @@
-.hero-section {
+@use '../../styles/breakpoints.scss';
+
+.hero_section {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   text-align: center;
 
-  @include tabl {
+  @include breakpoints.tablet {
     flex-direction: row;
     justify-content: space-between;
     gap: 115px;
@@ -13,37 +15,36 @@
   }
 }
 
-.hero-photo {
+.hero_photo {
   filter: drop-shadow(-2px 9px var(--secondary-bg-color));
   margin-bottom: 34px;
 
-  @include tabl {
+  @include breakpoints.tablet {
     min-width: 243px;
   }
 }
 
-.hero-info {
+.hero_info {
   max-width: 500px;
-  flex-basis: auto;
 }
 
-.hero-title {
+.hero_title {
   margin-bottom: 21px;
 
-  @include tabl {
+  @include breakpoints.tablet {
     margin-bottom: 40px;
   }
 }
 
-.hero-text {
+.hero_text {
   margin-bottom: 27px;
 
-  @include tabl {
+  @include breakpoints.tablet {
     margin-bottom: 38px;
   }
 }
 
-.resume-link {
+.resume_link {
   display: inline-block;
 
   padding: 9px 21px;

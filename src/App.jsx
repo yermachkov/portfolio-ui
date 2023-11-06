@@ -1,7 +1,7 @@
 import Header from './layouts/Header';
-import Hero from './components/Hero';
-import Blog from './components/Blog';
-import Works from './components/Works';
+import Hero from './components/Hero/Hero';
+import Blog from './components/Blog/Blog';
+import Works from './components/Works/Works';
 import Footer from './layouts/Footer';
 
 const App = () => {

@@ -1,46 +1,48 @@
-.blog-section {
+@use '../../styles/breakpoints.scss';
+
+.blog_section {
   background-color: var(--secondary-bg-color);
   padding: 27px 0 32px 0;
 }
 
-.blog-wrap {
+.blog_wrap {
   text-align: center;
   margin-bottom: 22px;
 
-  @include tabl {
+  @include breakpoints.tablet {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
 }
 
-.blog-section-title {
+.section_title {
   font-size: 18px;
   font-weight: 400;
 
-  @include tabl {
+  @include breakpoints.tablet {
     font-size: 22px;
   }
 }
 
-a.link-to-posts {
+a.all_posts_link {
   display: none;
 
-  @include tabl {
+  @include breakpoints.tablet {
     display: flex;
     color: #00a8cc;
   }
 }
 
-.post-list {
-  @include tabl {
+.post_list {
+  @include breakpoints.tablet {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 }
 
-.post-item {
+.post_item {
   background-color: #fff;
   border-radius: 4px;
   padding: 23px;
@@ -53,16 +55,4 @@ a.link-to-posts {
       0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-}
-
-.post-title {
-  margin-bottom: 17px;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(38.19 / 26);
-}
-
-.post-wrap {
-  display: flex;
-  margin-bottom: 11px;
 }

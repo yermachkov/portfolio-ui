@@ -1,0 +1,23 @@
+@use '../../styles/breakpoints.scss';
+
+.works_section {
+  margin-bottom: 83px;
+}
+
+.section_title {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  line-height: calc(60 / 18);
+
+  @include breakpoints.tablet {
+    text-align: left;
+    font-size: 22px;
+    line-height: calc(60 / 22);
+  }
+}
+
+.works_item {
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+}

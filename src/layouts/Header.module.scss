@@ -1,0 +1,88 @@
+@use '../styles/breakpoints.scss';
+
+.header_section {
+  margin-bottom: 33px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include breakpoints.tablet {
+    padding-right: 60px;
+    margin-bottom: 140px;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  min-height: 80px;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 36px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #000;
+}
+
+@media screen and (max-width: 779px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+
+    .bar {
+      background-color: #120f0b;
+      width: 30px;
+      height: 1.6px;
+      display: block;
+      margin: 6px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    &.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    &.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  .nav_menu {
+    position: fixed;
+    top: 0;
+    right: -110%;
+    padding: 100px 0;
+
+    flex-direction: column;
+    justify-content: start;
+    gap: 36px;
+
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+    background-color: var(--secondary-bg-color);
+    z-index: 1;
+  }
+
+  .nav_menu.active {
+    right: 0;
+  }
+}
+
+.nav_menu li {
+  &:hover,
+  &:focus,
+  &:active {
+    font-weight: bolder;
+  }
+}
